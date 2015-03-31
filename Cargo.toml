@@ -1,0 +1,11 @@
+[package]
+name = "chip8"
+version = "0.0.1"
+authors = ["SungRim Huh <sungrimhuh@gmail.com>"]
+
+[[bin]]
+name = "chip8"
+doc = false
+
+[dependencies]
+rand = "0.3.3"
