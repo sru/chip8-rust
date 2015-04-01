@@ -263,7 +263,7 @@ impl Chip8 {
 
   #[allow(non_snake_case)]
   fn op_Cxxx(&mut self) {
-    self.v[self.op_x()] = random() & self.op_kk();
+    self.v[self.op_x()] = random::<u8>() & self.op_kk();
     self.pc += 2;
   }
 

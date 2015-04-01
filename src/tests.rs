@@ -57,7 +57,7 @@ fn op_00E0() {
   let clean: [u8; 2048] = [0; 2048];
 
   for i in 0..2048 {
-    chip8.display[i] = random() % 2;
+    chip8.display[i] = if random() { 1 } else { 0 };
   }
 
   chip8.load(&[0x00, 0xE0]);

@@ -8,4 +8,4 @@ name = "chip8"
 doc = false
 
 [dependencies]
-rand = "0.3.3"
+rand = "0.3"
